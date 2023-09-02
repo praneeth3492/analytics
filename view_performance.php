@@ -7,6 +7,9 @@ if (!isset($_SESSION["manager_id"])) {
     exit;
 }
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $client_id = $_GET['client_id'];
 
 // Fetch the client's data from the database if necessary
